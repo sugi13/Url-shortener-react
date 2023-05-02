@@ -1,0 +1,12 @@
+            <div className="URL-list">
+            {
+                [data].map((Url, Index) =>{
+                    return (
+                        <div className="url-list-wrapper" key={Index}>
+                        <p>{Url.full_short_link}</p>
+                        <button><ion-icon name="copy-outline"></ion-icon></button>    
+                        </div>
+                    )
+                })
+            }
+            </div>
